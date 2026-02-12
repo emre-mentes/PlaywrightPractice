@@ -17,7 +17,7 @@ test("Test 1: Baslik IT iceriyor mu", async ({ page }) => {
 test("Test 2: Basligin TechPro Education IT Programs oldugunu dogrula", async ({
   page,
 }) => {
-    
+
   // TEST SENARYOSU 2:
   // 1. Hedef URL'e gidiniz.
   await page.goto("https://techproeducation.com");
@@ -27,6 +27,7 @@ test("Test 2: Basligin TechPro Education IT Programs oldugunu dogrula", async ({
 });
 
 test("Test 3: URL education iceriyor mu", async ({ page }) => {
+    
   // TEST SENARYOSU 3:
   // 1. Hedef URL'e gidiniz.
   await page.goto("https://techproeducation.com");
