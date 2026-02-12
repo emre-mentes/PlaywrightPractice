@@ -1,7 +1,8 @@
 import { test } from "@playwright/test";
 
 test("Navigation Methods", async ({ page }) => {
-  //   https://www.techproeducation.com/ adresine gidiniz
+  
+    //   https://www.techproeducation.com/ adresine gidiniz
   await page.goto("https://www.techproeducation.com/");
 
   //   https://www.amazon.com/ adresine gidiniz
