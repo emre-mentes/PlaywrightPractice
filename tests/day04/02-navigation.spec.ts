@@ -19,4 +19,5 @@ test("Navigation Methods", async ({ page }) => {
 
   //   sayfayi kapatiniz
   await page.close();
+  
 });
