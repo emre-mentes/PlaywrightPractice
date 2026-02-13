@@ -42,11 +42,12 @@ test("Test 3: URL education iceriyor mu", async ({ page }) => {
 test("Test 4: Sayfa URL'inin tam olarak https://www.techproeducation.com/ olduğunu doğrula", async ({
   page,
 }) => {
+  
   // TEST SENARYOSU 4:
   // 1. Hedef URL'e gidiniz.
   await page.goto("https://techproeducation.com");
 
   // 2. Sayfa URL'inin tam olarak "https://www.techproeducation.com/" olduğunu doğrulayınız.
   await expect(page).toHaveURL("https://www.techproeducation.com/");
-  
+
 });
