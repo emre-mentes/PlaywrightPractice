@@ -48,4 +48,5 @@ test("Test 4: Sayfa URL'inin tam olarak https://www.techproeducation.com/ olduğ
 
   // 2. Sayfa URL'inin tam olarak "https://www.techproeducation.com/" olduğunu doğrulayınız.
   await expect(page).toHaveURL("https://www.techproeducation.com/");
+  
 });
