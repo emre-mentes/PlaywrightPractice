@@ -1,7 +1,6 @@
 
 import { test, expect } from "@playwright/test";
 
-
 test.describe("Grup 1 Techpro Title ve Url testleri", () => {
 
     
