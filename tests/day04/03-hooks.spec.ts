@@ -13,6 +13,7 @@ test.afterAll(async () => {
   ); // Genel temizlik işlemleri
 });
 
+
 test.beforeEach(async ({ page }) => {
   console.log(
     "BEFORE EACH: Her testten ÖNCE çalışır - Kaç test varsa o kadar çalışır",
@@ -24,15 +25,18 @@ test.afterEach(async ({ page }) => {
   ); // Her test sonrası çıkış yap (eğer giriş yapılmışsa)
 });
 
+
 // İLK TEST
 test("İlk Test - Logo kontrolü", async ({ page }) => {
   console.log("TEST 1: Logo kontrolü testi çalışıyor"); // Test kodları burada
 });
 
+
 // İKİNCİ TEST
 test("İkinci Test - Menü linkleri çalışıyor", async ({ page }) => {
   console.log("TEST 2: Menü linkleri testi çalışıyor"); // Test kodları burada
 });
+
 
 // ÜÇÜNCÜ TEST
 test("Üçüncü Test - Arama özelliği", async ({ page }) => {
