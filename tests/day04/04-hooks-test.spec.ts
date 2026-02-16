@@ -9,6 +9,7 @@ test("Test 1: Title Kontrolü", async ({ page }) => {
   expect(title).toContain("IT");
 });
 
+
 test("Test 2: URL Kontrolü", async ({ page }) => {  
   const url = page.url();
   expect(url).toContain("education");
