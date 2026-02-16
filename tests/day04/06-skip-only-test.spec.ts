@@ -6,6 +6,7 @@ test("Test 1: Title Kontrolü", async ({ page }) => {
   expect(title).toContain("IT");
 });
 
+
 test("Test 2: URL Kontrolü", async ({ page }) => {
   await page.goto("https://techproeducation.com");
   const url = page.url();
