@@ -6,7 +6,6 @@ test("buraya testimizin basligini yazariz",()=>{
 // testlerimizle ilgili kodlari buraya yazacağız
 });
 
-
 promise : Tamamlanmasi zaman alacak bir islemin sonucunu o sonuc gelene kadar kod icinde temsil eder, 
 ve hatasiz testler yazabilmek icin promise return eden bir methodun basina mutlaka await keywordunu koymaliyiz
 
