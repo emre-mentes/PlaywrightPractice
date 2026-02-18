@@ -33,5 +33,6 @@ test("get by role ", async ({ page }) => {
 
   // Go to footer Bağlantısının tıklanabilir (etkin) olduğunu doğrulayın.
   await expect(goToFooterLink).toBeEnabled();
+  
 
 });
