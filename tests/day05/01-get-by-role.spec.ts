@@ -6,7 +6,6 @@ Not=>
  getByRole kullanabilmek icin bir weblementin implicit(<button>,<h1>) yada explicit(<div role="button">) bir rolu olmalidir
 */
 
-
 test("Baslik görünürlük Testi", async ({ page }) => {
   // https://testcenter.techproeducation.com/ sayfasina gidiniz
   await page.goto("https://testcenter.techproeducation.com/");
