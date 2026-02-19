@@ -2,7 +2,6 @@
 import { test, expect } from "@playwright/test";
 
 test.describe("Grup 1 Techpro Title ve Url testleri", () => {
-
     
   test("Test 1: Title Kontrolü", async ({ page }) => {
     await page.goto("https://techproeducation.com");
@@ -16,6 +15,5 @@ test.describe("Grup 1 Techpro Title ve Url testleri", () => {
     const url = page.url();
     expect(url).toContain("education");
   });
-
 
 });
