@@ -1,5 +1,6 @@
 import { test,expect } from '@playwright/test';
 
+
 test('Built-in locators practice', async ({ page }) => {
   //   1.  SauceDemo ana giriş sayfasını ziyaret et.https://www.saucedemo.com/
   await page.goto("https://www.saucedemo.com/");
