@@ -11,6 +11,7 @@ SYNTAX:
    (//tagName [ @ attribute ismi = 'attribute degeri' ]) [ index]
 */
 
+
 import { test, expect } from "@playwright/test";
 test("x path locator usage", async ({ page }) => {
   await page.goto("https://practicesoftwaretesting.com/auth/register");
