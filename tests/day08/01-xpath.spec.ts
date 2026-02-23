@@ -18,26 +18,32 @@ test("x path locator usage", async ({ page }) => {
   //tagname ile
   await expect(page.locator("//h3")).toHaveText("Customer registration");
 
+
   //tagname +  attribute name  + attribute value ile
   await page
     .locator("//input[@id='first_name']")
     .fill("tagname +  attribute name  + attribute value ile");
 
+    
   //tag name farketmeksizin
   await page.locator("//*[@id='first_name']").fill("tag name farketmeksizin");
+
 
   //Multiple Attribute Usage (And)
   await page
     .locator("//*[@id='first_name' and @placeholder='First name *']")
     .fill("Multiple Attribute Usage (And)");
 
+
   //full text
   await expect(
     page.locator("//*[text()='Customer registration']"),
   ).toBeVisible();
 
+
   //text() fonksiyonunun kısa yolu .
   await expect(page.locator("//*[.='Customer registration']")).toBeVisible();
+
 
   //contains text //*[  contains( text()   ,  'usto'  )     ]
   await expect(page.locator("//*[  contains( text()   ,  'usto'  )     ]")).toContainText("regis");
