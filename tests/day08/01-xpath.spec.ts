@@ -24,7 +24,7 @@ test("x path locator usage", async ({ page }) => {
     .locator("//input[@id='first_name']")
     .fill("tagname +  attribute name  + attribute value ile");
 
-    
+
   //tag name farketmeksizin
   await page.locator("//*[@id='first_name']").fill("tag name farketmeksizin");
 
@@ -46,7 +46,7 @@ test("x path locator usage", async ({ page }) => {
 
 
   //contains text //*[  contains( text()   ,  'usto'  )     ]
-  await expect(page.locator("//*[  contains( text()   ,  'usto'  )     ]")).toContainText("regis");
+  await expect(page.locator("//*[contains( text() ,'usto') ]")).toContainText("regis");
 
 
 
