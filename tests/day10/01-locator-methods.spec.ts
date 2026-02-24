@@ -39,4 +39,5 @@ test('inputValue(), pressSequentially(), clear(), press()', async ({ page }) => 
   // 7. inputValue() ile input alanının temizlendiğini doğrula.
   const actualClearedValue = await input.inputValue();
   expect(actualClearedValue).toBe("");//kutunun icinde hicbir karakter kalmamis olmali
+  
 });
