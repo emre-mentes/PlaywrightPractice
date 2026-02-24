@@ -1,7 +1,7 @@
 import { test, expect, Locator } from "@playwright/test";
 
 test("practice", async ({ page }) => {
-    
+
   // 1. https://www.amazon.com sayfasına git.
   await page.goto("https://www.amazon.com");
 
@@ -36,6 +36,5 @@ test("practice", async ({ page }) => {
 
   // 7. Sayfa başlığının "mouse" içerdiğini doğrula.
   await expect(page).toHaveTitle(/mouse/i);//buyuk harf kücük harf duyarsiz olarak mouse iceriyormu diye kontrol ettik
-
 
 });
