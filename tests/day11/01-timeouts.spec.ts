@@ -17,6 +17,7 @@ test("action timeout practice", async ({ page }) => {
   await page.getByRole("button", { name: "Start" }).click({ timeout: 1000 });
 });
 
+
 test('navigation timeout practice', async ({ page }) => {
     //google sayfasinin 100 milisaniye icinde acilmasini aksi halde timeout error vermesini sagladik
     await page.goto("https://google.com",{timeout:100});
