@@ -1,5 +1,6 @@
 import { test, expect } from "@playwright/test";
 
+
 test("non-retrying assertions", async ({ page }) => {
   const kursAdi = "Playwright Otomasyon";
   const ogrenciSayisi = 25;
