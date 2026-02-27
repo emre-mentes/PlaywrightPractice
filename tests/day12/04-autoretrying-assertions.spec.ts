@@ -32,16 +32,16 @@ test("auto-retrying assertions", async ({ page }) => {
 
   // 9.  "Hide" butonuna tıkla ve input'un gizlendiğini doğrula.
   await page.getByRole("button", { name: "Hide" }).click();
-  await expect(hideShowInput).toBeHidden();
+  await expect(hideShowInput).toBeHidden(); //toBeVisible() in tam tersi
 
   // 10. Switch To Alert Example elementinin Alert içerip içermediğini doğrula.
   const switchTitle = page.getByText("Switch To Alert Example");
-  await expect(switchTitle).toContainText("Alert"); //Alert icerdigini kontrol ediyoruz
+  await expect(switchTitle).toContainText("Alert"); //Alert icerdigini kontrol ediyoruz,Tam eşleşme gerekmez.
   await expect(switchTitle).not.toContainText("Test"); //Test icermedigini kontrol ediyoruz
 
   // 11. Sayfa başlığının "Practice Page" olduğunu doğrula.
   const pageTitle = page.getByRole("heading", { name: "Practice Page" });
-  await expect(pageTitle).toHaveText("Practice Page"); //Practice Page oldugunu kontrol ettik
+  await expect(pageTitle).toHaveText("Practice Page"); //Practice Page oldugunu kontrol ettik,Tam eşleşme gerekir
   await expect(pageTitle).not.toHaveText("Test"); //Test olmadigini kontrol ettik
 
   // 12. enableDisableInput metin kutusunda yazili olan değerinin "Test" olduğunu doğrula.
