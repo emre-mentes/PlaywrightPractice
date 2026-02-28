@@ -1,6 +1,5 @@
 import { test, expect } from "@playwright/test";
 
-
 test("non-retrying assertions", async ({ page }) => {
   const kursAdi = "Playwright Otomasyon";
   const ogrenciSayisi = 25;
@@ -44,7 +43,6 @@ test("non-retrying assertions", async ({ page }) => {
   expect(0).toBeFalsy();
   expect(null).toBeFalsy();
   expect(undefined).toBeFalsy();
-
 
   //toBeNull()
   //bu method bir deger tamamen bosmu yani null mi diye kontrol eder
