@@ -55,4 +55,5 @@ test("soft assertion ", async ({ page }) => {
   console.log(
     "BU SATIR CALISTIRILIR CUNKU ONCEKİ SATİRDA TEST BASARISIZ OLSA BILE SOFT ASSERTION KULLANILDI",
   );
+  
 });
