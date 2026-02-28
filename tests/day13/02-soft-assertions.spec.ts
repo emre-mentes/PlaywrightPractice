@@ -33,4 +33,5 @@ test("soft assertions", async ({ page }) => {
 
   expect.soft(bosKutu).toBeNull();
   
+  
 });
