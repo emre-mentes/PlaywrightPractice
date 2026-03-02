@@ -30,6 +30,7 @@ test("hard assertion ", async ({ page }) => {
 
 });
 
+
 test("soft assertion ", async ({ page }) => {
 
   // 1. "https://mehmet-alatas.github.io/qatest/" adresine git
