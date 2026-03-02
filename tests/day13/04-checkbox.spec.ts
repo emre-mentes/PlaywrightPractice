@@ -1,5 +1,6 @@
 import { test, expect } from "@playwright/test";
 
+
 test("checkboxes", async ({ page }) => {
   // Test Case: Checkbox 1 isaretlenmeli ve Checkbox 2 isareti kaldirilmali
   // 1. "https://the-internet.herokuapp.com/checkboxes" adresine git
