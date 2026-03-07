@@ -59,14 +59,14 @@ test("prompt alert", async ({ page }) => {
   // 1. Alert sayfasını ziyaret et.
   // 2. Alert açılma olayını dinle ve metin gönderme/onaylama işlemini tanımla (Tek komut ile).
   // 3. Üçüncü butona tıkla ve Prompt Alert'i tetikle.
-  // 4. Sonuç mesajında gönderilen ismin ("mehmet") görüntülendiğini doğrula.
+  // 4. Sonuç mesajında gönderilen ismin ("emre") görüntülendiğini doğrula.
   // 1. https://testcenter.techproeducation.com/index.php?page=javascript-alerts sayfasına gidiniz.
   await page.goto(
     "https://testcenter.techproeducation.com/index.php?page=javascript-alerts",
   );
 
   page.on("dialog", async (dialog) => {
-    dialog.accept("mehmet"); //metni kutuya yazar ve hemen ardından ok tusuna basarak onaylar
+    dialog.accept("emre"); //metni kutuya yazar ve hemen ardından ok tusuna basarak onaylar
   });
 
   // 2. Üçüncü butona tıkla ve Prompt Alert'i tetikle.
@@ -74,5 +74,5 @@ test("prompt alert", async ({ page }) => {
 
   // 3. Sonuç mesajının You entered icerdigini doğrula.
   const resultMessage = page.locator("#result");
-  await expect(resultMessage).toContainText("mehmet");
+  await expect(resultMessage).toContainText("emre");
 });
