@@ -1,23 +1,23 @@
 import { test, expect } from "@playwright/test";
 
 // ╔══════════════════════════════════════════════════════════════╗
-// ║           TEST CASE: Dosya İndirme (File Download)     ║
+// ║       TEST CASE: Dosya İndirme (File Download)               ║
 // ╠══════════════════════════════════════════════════════════════╣
-// ║ TC-001: Download butonuna tıklandığında dosya indirilmeli    ║
+// ║ TC-001: Download butonuna tıklandığında dosya indirilmeli    ║
 // ╠══════════════════════════════════════════════════════════════╣
-// ║ PRECONDITIONS:                                               ║
+// ║ PRECONDITIONS:                                               ║
 // ║https://testcenter.techproeducation.com/index.php?page=file-download
-// ║  erişilebilir olmalı                                         ║
+// ║  erişilebilir olmalı                                         ║
 // ╠══════════════════════════════════════════════════════════════╣
-// ║ TEST STEPS:                                                  ║
-// ║   1. Download sayfasına git                                  ║
-// ║   2. İndirme event'ini dinlemeye başla                       ║
-// ║   3. b10 all test cases, code.docx Dosya linkine tıkla       ║
-// ║   4. İndirme tamamlanana kadar bekle                         ║
-// ║   5. Dosya adını doğrula                                     ║
+// ║ TEST STEPS:                                                  ║
+// ║  1. Download sayfasına git                                   ║
+// ║  2. İndirme event'ini dinlemeye başla                        ║
+// ║  3. b10 all test cases, code.docx Dosya linkine tıkla        ║
+// ║  4. İndirme tamamlanana kadar bekle                          ║
+// ║  5. Dosya adını doğrula                                      ║
 // ╠══════════════════════════════════════════════════════════════╣
-// ║ EXPECTED RESULT:                                             ║
-// ║   - İndirilen dosyanın adı "b10 all test cases, code.docx" olmalı ║
+// ║ EXPECTED RESULT:                                             ║
+// ║-İndirilen dosyann adı "b10 all test cases, code.docx" olmalı ║
 // ╚══════════════════════════════════════════════════════════════╝
 
 test('file download testi', async ({ page }) => {
