@@ -1,22 +1,22 @@
 import { test, expect } from "@playwright/test";
 
 // ╔══════════════════════════════════════════════════════════════╗
-// ║           TEST CASE: Dosya Yükleme (File Upload)             ║
+// ║           TEST CASE: Dosya Yükleme (File Upload)             ║
 // ╠══════════════════════════════════════════════════════════════╣
-// ║ TC-001: Kullanıcı dosya yüklediğinde başarılı olmalı         ║
+// ║ TC-001: Kullanıcı dosya yüklediğinde başarılı olmalı         ║
 // ╠══════════════════════════════════════════════════════════════╣
-// ║ PRECONDITIONS:                                               ║
-// ║   - https://the-internet.herokuapp.com erişilebilir olmalı   ║
-// ║   - tests/day18/upload/FileUpload.pdf projede mevcut olmalı  ║
+// ║ PRECONDITIONS:                                               ║
+// ║   - https://the-internet.herokuapp.com erişilebilir olmalı   ║
+// ║   - tests/day18/upload/FileUpload.pdf projede mevcut olmalı  ║
 // ╠══════════════════════════════════════════════════════════════╣
-// ║ TEST STEPS:                                                  ║
-// ║   1. Upload sayfasına git                                    ║
-// ║   2. Dosyayı input'a ver                                     ║
-// ║   3. Upload butonuna tıkla                                   ║
-// ║   4. Başarı mesajını doğrula                                 ║
+// ║ TEST STEPS:                                                  ║
+// ║   1. Upload sayfasına git                                    ║
+// ║   2. Dosyayı input'a ver                                     ║
+// ║   3. Upload butonuna tıkla                                   ║
+// ║   4. Başarı mesajını doğrula                                 ║
 // ╠══════════════════════════════════════════════════════════════╣
-// ║ EXPECTED RESULT:                                             ║
-// ║   - "File Uploaded!" yazısı görünmeli                        ║
+// ║ EXPECTED RESULT: ║
+// ║   - "File Uploaded!" yazısı görünmeli ║
 // ╚══════════════════════════════════════════════════════════════╝
 
 test("file upload test", async ({ page }) => {
