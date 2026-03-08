@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 
 // ╔══════════════════════════════════════════════════════════════╗
-// ║           TEST CASE: Dosya Yükleme (File Upload)             ║
+// ║           TEST CASE: Dosya Yükleme (File Upload)             ║
 // ╠══════════════════════════════════════════════════════════════╣
 // ║ TC-001: Kullanıcı dosya yüklediğinde başarılı olmalı         ║
 // ╠══════════════════════════════════════════════════════════════╣
@@ -15,13 +15,23 @@ import { test, expect } from "@playwright/test";
 // ║   3. Upload butonuna tıkla                                   ║
 // ║   4. Başarı mesajını doğrula                                 ║
 // ╠══════════════════════════════════════════════════════════════╣
-// ║ EXPECTED RESULT: ║
-// ║   - "File Uploaded!" yazısı görünmeli ║
+// ║ EXPECTED RESULT:                                             ║
+// ║   - "File Uploaded!" yazısı görünmeli                        ║
 // ╚══════════════════════════════════════════════════════════════╝
+
 
 test("file upload test", async ({ page }) => {
   await page.goto("https://the-internet.herokuapp.com/upload");
 
+  await page
+    .locator("#file-upload")
+    .setInputFiles("tests/day18/upload/FileUpload.pdf");
+    
+    
+
+  await page.locator("#file-submit").click();
+
+  await expect(page.getByText("File Uploaded!")).toBeVisible();
 
 });
 
