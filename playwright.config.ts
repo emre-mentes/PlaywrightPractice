@@ -39,7 +39,9 @@ export default defineConfig({
     // baseURL: 'http://localhost:3000',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: "on-first-retry",
+    screenshot:"only-on-failure",
+    video:"retain-on-failure",
+    trace:"retain-on-failure",
     testIdAttribute: "data-test",
 
     actionTimeout:10000, // click(), fill().. gibi actionlarda elemanin hazir olmasi icin 10 saniyelik bir limit tanimladik, default suresi yok, test timeouta tabidir

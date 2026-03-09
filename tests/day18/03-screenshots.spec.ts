@@ -14,6 +14,7 @@ test("Full Page screenshot", async ({ page }) => {
 
   //sayfanın ekran görüntüsünü alalim
   await page.screenshot({ path: "screenshots/full-page.png",fullPage:true });
+  // normalde default olarak fullpage false
 });
 
 test("Webelement screenshot", async ({ page }) => {
@@ -29,8 +30,6 @@ test("Webelement screenshot", async ({ page }) => {
   
 });
 
-
-
 test("Configuration screenshot", async ({ page }) => {
   //techproeducation sayfasina gidelim
   await page.goto("https://www.techproeducation.com");
@@ -42,3 +41,4 @@ test("Configuration screenshot", async ({ page }) => {
   //arama kutusunun ekran görüntüsünü alalim
   await searchBox.screenshot({ path: "screenshots/searchbox.png" });
 });
+
