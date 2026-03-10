@@ -6,6 +6,7 @@ const credentials = [
   { username: "performance_glitch_user", password: "secret_sauce" }, // 3. kullanıcı
 ];
 
+
 //ikinci yol for each loop
 credentials.forEach((credential) => {
   test(`login testi ${credential.username} ikinci yol`, async ({ page }) => {
