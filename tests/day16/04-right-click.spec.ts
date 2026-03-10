@@ -1,5 +1,5 @@
 import { test, expect } from "@playwright/test";
-test.only("right click", async ({ page }) => {
+test("right click", async ({ page }) => {
   // 1. https://demoqa.com/buttons sayfasına git
   await page.goto("https://demoqa.com/buttons");
 
