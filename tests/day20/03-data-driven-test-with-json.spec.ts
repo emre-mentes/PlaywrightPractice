@@ -1,7 +1,9 @@
 import { test, expect } from "@playwright/test";
 
+
 import credentials from "../../test-data/login-test-data.json";
 //credentials json dosyasindaki tüm credentiallari iceren bir arraydir
+
 
 for (const user of credentials) {
 
