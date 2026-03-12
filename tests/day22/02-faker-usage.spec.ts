@@ -21,6 +21,7 @@ test("faker ile dynamic test datalari kullanimi", async ({ page }) => {
   console.log(formData.email);
   console.log(formData.password);
 
+  
   // 3. Form alanlarını locator'lar ile tanımla
   const textInput = page.getByLabel("Text", { exact: true });
   const searchInput = page.getByLabel("Search");
@@ -30,6 +31,7 @@ test("faker ile dynamic test datalari kullanimi", async ({ page }) => {
   const telInput = page.getByLabel("tel");
   const noneTextInput = page.getByLabel("None (text)");
 
+
   // 4. Her form alanını faker ile üretilen verilerle doldur
   await textInput.fill(formData.text);
   await searchInput.fill(formData.search);
@@ -38,6 +40,7 @@ test("faker ile dynamic test datalari kullanimi", async ({ page }) => {
   await urlInput.fill(formData.url);
   await telInput.fill(formData.tel);
   await noneTextInput.fill(formData.none);
+
 
   // 5. Doldurduğun her alanın doğru değeri taşıdığını doğrula
   await expect(textInput).toHaveValue(formData.text);
