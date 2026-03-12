@@ -2,6 +2,7 @@ import { test, expect } from "@playwright/test";
 //import { faker } from "@faker-js/faker";
 import { faker } from "@faker-js/faker/locale/tr";
 
+
 test("faker ile dynamic test datalari kullanimi", async ({ page }) => {
   // 1. https://testpages.eviltester.com/pages/forms/text-inputs/ sayfasına git
   await page.goto("https://testpages.eviltester.com/pages/forms/text-inputs/");
