@@ -11,7 +11,6 @@ test("faker ile dynamic test datalari kullanimi", async ({ page }) => {
   const formData =getTextInputsFormData();
 
 
-
   // 3. Form alanlarını locator'lar ile tanımla
   const textInput = page.getByLabel("Text", { exact: true });
   const searchInput = page.getByLabel("Search");
