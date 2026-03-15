@@ -5,6 +5,7 @@ import * as dotenv from "dotenv"
 //process Node.js in yerlesik ve global bir objectidir ve programin calistigi ortam hakkinda bilgileri tutar
 dotenv.config();
 
+
 const validUserNAME =process.env.SAUCEDEMO_USERNAME_VALID;
 console.log("validUserNAME :",validUserNAME);
 
