@@ -5,6 +5,7 @@ import * as xlsx from "xlsx";
  * @param filePath Okunacak olan dosya yolu (örn:"test-data/loginTestData.xlsx")
  * @returns Excelin okunan sayfasindaki satirlari JSON array olarak return eder,
  */
+
 export function getExcelData(filePath:string): any[] {
   const workbook = xlsx.readFile(filePath);
   const sheetName = workbook.SheetNames[0];
