@@ -2,7 +2,6 @@ import { test, expect } from "@playwright/test";
 import * as dotenv from "dotenv";
 dotenv.config();
 
-
 test("login testi", async ({ page }) => {
   //   Tarayıcıda https://www.saucedemo.com/ adresine git
   await page.goto(process.env.BASE_URL || "https://www.saucedemo.com/");
