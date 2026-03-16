@@ -24,6 +24,7 @@ import { faker } from "@faker-js/faker";
  * console.log(data1.email); // → "john.doe42@gmail.com"
  * console.log(data2.email); // → "mary.smith99@yahoo.com"  (farklı!)
  */
+
 export function getTextInputsFormData() {
   return {
     text: faker.lorem.words(2),
