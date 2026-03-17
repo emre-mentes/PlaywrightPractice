@@ -56,6 +56,13 @@ export default defineConfig({
   projects: [
 
     {
+      name: "smoke",
+      use: { ...devices["Desktop Chrome"] },
+      testMatch:"**/smoke/*.spec.ts"
+    },
+
+
+    {
       name: "batch366",
       use: { ...devices["Desktop Chrome"] },
     },
