@@ -3,7 +3,7 @@ import * as dotenv from "dotenv";
 dotenv.config();
 
 test("login testi", async ({ page }) => {
-  //   Tarayıcıda https://www.saucedemo.com/ adresine git
+  //  Tarayıcıda https://www.saucedemo.com/ adresine git
   await page.goto(process.env.BASE_URL || "https://www.saucedemo.com/");
   // || => soldaki deger herhangi bir falsy(null,undefined,"",0,false) deger ise sagdaki degeri kullan demek
 
@@ -14,17 +14,17 @@ test("login testi", async ({ page }) => {
 
   //! => typescripte güven bana bu data kesinlikle gelecek demis olduk, eger data gelmezse hata fırlatir
 
-  //   Username alanına "standard_user" yaz
+  //  Username alanına "standard_user" yaz
   await usernameFiled.fill(process.env.SAUCEDEMO_USERNAME_VALID!);
 
   //?? => nullish coalescing operator()  ?? solundaki deger undefined yada null ise sagdaki degeri kullan demek, sadece null ve undefined ise devreye girer
-  //   Password alanına "secret_sauce" yaz
+  //  Password alanına "secret_sauce" yaz
   await passwordFiled.fill(
     process.env.SAUCEDEMO_PASSWORD_VALID ?? "secret_sauce",
   );
-  //   Login butonuna tıkla
+  //  Login butonuna tıkla
   await loginButton.click();
-  //   Login isleminin basarili oldugunu dogrula
+  //  Login isleminin basarili oldugunu dogrula
   await expect(productsTitle).toBeVisible();
 });
 
