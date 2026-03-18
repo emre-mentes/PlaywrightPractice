@@ -69,6 +69,11 @@ export default defineConfig({
     },
 
     {
+      name:"setup",
+      testMatch:"**/auth.setup.ts"
+    },
+
+    {
       name: "smoke",
       use: { 
         ...devices["Desktop Chrome"],
