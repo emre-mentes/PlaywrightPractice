@@ -56,8 +56,25 @@ export default defineConfig({
   projects: [
 
     {
+      name: "iphone 13",
+      use: { ...devices["iPhone 13"] },
+    },
+    {
+      name: "ipad mini",
+      use: { ...devices["iPad Mini"] },
+    },
+    {
+      name: "galaxy s8",
+      use: { ...devices["Galaxy S8"] },
+    },
+
+    {
       name: "smoke",
-      use: { ...devices["Desktop Chrome"] },
+      use: { 
+        ...devices["Desktop Chrome"],
+        headless: false,
+        viewport : {width:750,height:750}
+      },
       testMatch:"**/smoke/*.spec.ts"
     },
 
