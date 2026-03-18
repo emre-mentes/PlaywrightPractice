@@ -78,9 +78,11 @@ export default defineConfig({
       use: { 
         ...devices["Desktop Chrome"],
         headless: false,
-        viewport : {width:750,height:750}
+        viewport : {width:750,height:750},
+        storageState:"playwright/.auth/user.json"
       },
-      testMatch:"**/smoke/*.spec.ts"
+      testMatch:"**/smoke/*.spec.ts",
+      dependencies: ["setup"],//smoke testleri calistirmadan önce setup projectini calistir
     },
 
 
