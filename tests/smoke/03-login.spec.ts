@@ -17,4 +17,5 @@ test("login testi", async ({ page }) => {
   await loginButton.click();
   //   Login isleminin basarili oldugunu dogrula
   await expect(productsTitle).toBeVisible();
+  
 });
