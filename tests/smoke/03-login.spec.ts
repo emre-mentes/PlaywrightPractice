@@ -1,6 +1,5 @@
 import { test, expect } from "@playwright/test";
 
-
 test("login testi", async ({ page }) => {
   //   Tarayıcıda https://www.saucedemo.com/ adresine git
   await page.goto("https://www.saucedemo.com/");
@@ -18,4 +17,5 @@ test("login testi", async ({ page }) => {
   await loginButton.click();
   //   Login isleminin basarili oldugunu dogrula
   await expect(productsTitle).toBeVisible();
+  
 });
