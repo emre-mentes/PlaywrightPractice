@@ -1,5 +1,6 @@
 import { test, expect } from "@playwright/test";
 
+
 test("login testi", async ({ page }) => {
   //   Tarayıcıda https://www.saucedemo.com/ adresine git
   await page.goto("https://www.saucedemo.com/");
