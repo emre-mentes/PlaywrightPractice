@@ -14,8 +14,8 @@ test("login testi", async ({ page }) => {
   await usernameFiled.fill("standard_user");
   //  Password alanına "secret_sauce" yaz
   await passwordFiled.fill("secret_sauce");
-  //   Login butonuna tıkla
+  //  Login butonuna tıkla
   await loginButton.click();
-  //   Login isleminin basarili oldugunu dogrula
+  //  Login isleminin basarili oldugunu dogrula
   await expect(productsTitle).toBeVisible();
 });
