@@ -1,5 +1,6 @@
 import { test, expect, devices } from "@playwright/test";
 
+
 test.use({...devices["iPhone 13"]});
 
 test("login testi", async ({ page }) => {
