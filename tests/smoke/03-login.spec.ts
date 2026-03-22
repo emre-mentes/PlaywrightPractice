@@ -10,7 +10,6 @@ test("login testi", async ({ page }) => {
   const loginButton = page.getByTestId("login-button");
   const productsTitle = page.getByTestId("title");
 
-  
   //  Username alanına "standard_user" yaz
   await usernameFiled.fill("standard_user");
   //  Password alanına "secret_sauce" yaz
