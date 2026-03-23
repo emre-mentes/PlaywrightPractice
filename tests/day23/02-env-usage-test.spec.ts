@@ -28,6 +28,7 @@ test("login testi", async ({ page }) => {
   await expect(productsTitle).toBeVisible();
 });
 
+
 test("dotenv base url kullanimi", async ({ page }) => {
   /*use: {
     baseURL: process.env.BASE_URL || "https://www.saucedemo.com/",
