@@ -3,7 +3,7 @@ import {test,expect} from "@playwright/test"
 /*
 syntax
 test("buraya testimizin basligini yazariz",()=>{
-// testlerimizle ilgili kodlari buraya yazacagız
+// testlerimizle ilgili kodlari buraya yazacagiz
 });
 
 promise : Tamamlanmasi zaman alacak bir islemin sonucunu o sonuc gelene kadar kod icinde temsil eder, 
