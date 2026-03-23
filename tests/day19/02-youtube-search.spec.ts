@@ -24,6 +24,7 @@ searchKeywords.forEach((searchKeyword) => {
   });
 });
 
+
 //1. yol
 for (const searchKeyword of searchKeywords) {
   test(`Parameterize test with playwright ${searchKeyword}`, async ({
