@@ -16,7 +16,8 @@ ve await kullanabilmek icin fonkisyonu async olarak isaretlememiz gerekir
 */
 
 test("Sayfa Basligini dogrula",async({page})=>{
-    
+  
+  
   await page.goto('https://www.techproeducation.com/');
   await expect(page.locator('#react-header').getByRole('link', { name: 'TechPro Education' })).toBeVisible();
   await expect(page.locator('h1')).toContainText('Programs');
