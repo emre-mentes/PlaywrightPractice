@@ -1,0 +1,41 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e5]:
+      - link [ref=e6]:
+        - /url: /about/products/?sca_esv=1b9fc756e6c3b46d
+      - generic [ref=e7]: All
+      - link "Images" [ref=e8]:
+        - /url: /search?sca_esv=1b9fc756e6c3b46d&tbm=isch
+      - link "Sign in" [ref=e11]:
+        - /url: https://accounts.google.com/ServiceLogin?continue=https://www.google.com/%3Fzx%3D1774364542&btmpl=mobile_tier2&hl=en
+        - generic [ref=e12]: Sign in
+    - img [ref=e14]
+    - generic [ref=e18]:
+      - textbox [ref=e21]
+      - button [ref=e22]
+  - generic [ref=e25]:
+    - separator [ref=e27]
+    - generic [ref=e28]:
+      - generic [ref=e29]:
+        - link "Privacy" [ref=e31]:
+          - /url: /intl/en-DE/policies/privacy/
+        - link "Terms" [ref=e33]:
+          - /url: /intl/en-DE/policies/terms/
+      - generic [ref=e34]:
+        - link "Settings" [ref=e36]:
+          - /url: https://www.google.com/preferences?hl=en
+        - link "Feedback" [ref=e38]:
+          - /url: /tools/feedback/survey/xhtml?productId=196&bucket=typeId:84156&psd_tier=2&hl=en-DE
+        - link "Help" [ref=e40]:
+          - /url: /support/websearch/bin/answer.py?answer=134479&hl=en
+      - generic [ref=e41]:
+        - link "Advertising" [ref=e43]:
+          - /url: /intl/en-DE/ads
+        - link "Business" [ref=e45]:
+          - /url: /intl/en-DE/services
+        - link "About" [ref=e47]:
+          - /url: /about?hl=en-DE
+```
