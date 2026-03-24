@@ -1,0 +1,205 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - button [ref=e5]:
+        - img [ref=e6]
+      - generic [ref=e9]:
+        - generic [ref=e10]: Alle
+        - link [ref=e11] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?sca_esv=4b9c4fb793c57767&output=search&tbm=isch&tbo=u&sa=X&ved=0ahUKEwi7p_CjzbmTAxWdB9sEHQqLL-AQ0tQDCAUoAQ
+          - text: Bilder
+      - generic [ref=e16]:
+        - button [ref=e20] [cursor=pointer]:
+          - img [ref=e21]
+        - link [ref=e24] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=de&passive=true&continue=https://www.google.com/&ec=GAZAmgQ
+          - text: Anmelden
+    - generic [ref=e25]:
+      - img [ref=e27]
+      - generic [ref=e34]:
+        - search [ref=e36]:
+          - generic [ref=e39]:
+            - button [ref=e40]:
+              - img [ref=e43]
+            - combobox [ref=e45]:
+              - textbox [ref=e46]: Playwright test automation
+            - generic [ref=e47]:
+              - button [ref=e48] [cursor=pointer]:
+                - img [ref=e50]
+              - button [ref=e52] [cursor=pointer]:
+                - img [ref=e53]
+              - link [ref=e56] [cursor=pointer]:
+                - /url: https://search.app.goo.gl/?ofl=https%3A%2F%2Flens.google&al=googleapp%3A%2F%2Flens%3Flens_data%3DKAw&apn=com.google.android.googlequicksearchbox&amv=301204913&isi=284815942&ius=googleapp&ibi=com.google.GoogleMobile&link=https%3A%2F%2Fgoo.gl%2Fiosgoogleapp%2Fdefault%3Furl%3Dgoogleapp%253A%252F%252Flens%253Fmin-version%253D180%2526lens_data%253DKAw&ifl=https%3A%2F%2Fapps.apple.com%2Fus%2Fapp%2Fgoogle%2Fid284815942%3Fppid%3D1ac8cc35-d99c-4a1d-b909-321c8968cc74%26pt%3D9008%26mt%3D8%26ct%3D4815459-oo-lens-isb-bar-lens-cam%26UTM_campaign%3Dgoogle_search_mweb&efr=1&ct=4815459-oo-lens-isb-bar-lens-cam&utm_campaign=4815459-oo-lens-isb-bar-lens-cam&utm_source=google_search_mweb&utm_medium=owned&pt=9008&mt=8
+                - img [ref=e57]
+        - generic [ref=e61]:
+          - text: "Google gibt es auch auf:"
+          - link [ref=e62] [cursor=pointer]:
+            - /url: https://www.google.com/setprefs?sig=0_z9ayPupz-8tb_Qxgb7Kv0zZcKp4%3D&hl=en&source=homepage&sa=X&ved=0ahUKEwi7p_CjzbmTAxWdB9sEHQqLL-AQ2ZgBCBw
+            - text: English
+    - generic [ref=e65]:
+      - generic [ref=e67]: Deutschland
+      - generic [ref=e68]:
+        - link [ref=e69] [cursor=pointer]:
+          - /url: "#"
+          - text: "Dunkles Design: deaktiviert"
+        - button [ref=e73] [cursor=pointer]: Einstellungen
+        - link [ref=e74] [cursor=pointer]:
+          - /url: https://policies.google.com/privacy?hl=de&fg=1
+          - text: Datenschutzerklärung
+        - link [ref=e75] [cursor=pointer]:
+          - /url: https://policies.google.com/terms?hl=de&fg=1
+          - text: Nutzungsbedingungen
+  - generic [ref=e77]:
+    - link [ref=e78] [cursor=pointer]:
+      - /url: https://www.google.com/intl/de_de/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1
+      - text: Werbeprogramme
+    - link [ref=e79] [cursor=pointer]:
+      - /url: https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1
+      - text: Unternehmen
+    - link [ref=e80] [cursor=pointer]:
+      - /url: https://about.google/?utm_source=google-DE&utm_medium=referral&utm_campaign=hp-footer&fg=1
+      - text: Über Google
+  - dialog "Bevor Sie zur Google Suche weitergehen":
+    - generic [ref=e87]:
+      - generic [ref=e89]:
+        - img "Google" [ref=e90]
+        - generic [ref=e91]:
+          - generic [ref=e92]:
+            - 'button "Sprache: ‪Deutsch‬" [expanded] [ref=e93] [cursor=pointer]':
+              - generic [ref=e94]:
+                - img
+                - generic [ref=e95]: de
+            - menu [ref=e96]:
+              - menuitem "‪Deutsch‬" [disabled] [active] [ref=e97]:
+                - img [ref=e99]
+                - text: ‪Deutsch‬
+              - generic [ref=e101]:
+                - menuitem "‪English (United Kingdom)‬" [ref=e102] [cursor=pointer]
+                - menuitem "‪Español (España)‬" [ref=e103] [cursor=pointer]
+                - menuitem "‪Français (France)‬" [ref=e104] [cursor=pointer]
+                - menuitem "‪Italiano‬" [ref=e105] [cursor=pointer]
+                - menuitem "Alle Sprachen" [ref=e106]
+              - menuitem "‪Afrikaans‬" [ref=e107] [cursor=pointer]
+              - menuitem "‪azərbaycan‬" [ref=e108] [cursor=pointer]
+              - menuitem "‪bosanski‬" [ref=e109] [cursor=pointer]
+              - menuitem "‪català‬" [ref=e110] [cursor=pointer]
+              - menuitem "‪Čeština‬" [ref=e111] [cursor=pointer]
+              - menuitem "‪Cymraeg‬" [ref=e112] [cursor=pointer]
+              - menuitem "‪Dansk‬" [ref=e113] [cursor=pointer]
+              - menuitem "‪eesti‬" [ref=e114] [cursor=pointer]
+              - menuitem "‪English (United Kingdom)‬" [ref=e115] [cursor=pointer]
+              - menuitem "‪English (United States)‬" [ref=e116] [cursor=pointer]
+              - menuitem "‪English‬" [ref=e117] [cursor=pointer]
+              - menuitem "‪Español (España)‬" [ref=e118] [cursor=pointer]
+              - menuitem "‪Español (Latinoamérica)‬" [ref=e119] [cursor=pointer]
+              - menuitem "‪euskara‬" [ref=e120] [cursor=pointer]
+              - menuitem "‪Filipino‬" [ref=e121] [cursor=pointer]
+              - menuitem "‪Français (Canada)‬" [ref=e122] [cursor=pointer]
+              - menuitem "‪Français (France)‬" [ref=e123] [cursor=pointer]
+              - menuitem "‪Gaeilge‬" [ref=e124] [cursor=pointer]
+              - menuitem "‪galego‬" [ref=e125] [cursor=pointer]
+              - menuitem "‪Hrvatski‬" [ref=e126] [cursor=pointer]
+              - menuitem "‪Indonesia‬" [ref=e127] [cursor=pointer]
+              - menuitem "‪isiZulu‬" [ref=e128] [cursor=pointer]
+              - menuitem "‪íslenska‬" [ref=e129] [cursor=pointer]
+              - menuitem "‪Italiano‬" [ref=e130] [cursor=pointer]
+              - menuitem "‪Kiswahili‬" [ref=e131] [cursor=pointer]
+              - menuitem "‪latviešu‬" [ref=e132] [cursor=pointer]
+              - menuitem "‪lietuvių‬" [ref=e133] [cursor=pointer]
+              - menuitem "‪magyar‬" [ref=e134] [cursor=pointer]
+              - menuitem "‪Melayu‬" [ref=e135] [cursor=pointer]
+              - menuitem "‪Nederlands‬" [ref=e136] [cursor=pointer]
+              - menuitem "‪norsk‬" [ref=e137] [cursor=pointer]
+              - menuitem "‪o‘zbek‬" [ref=e138] [cursor=pointer]
+              - menuitem "‪polski‬" [ref=e139] [cursor=pointer]
+              - menuitem "‪Português (Brasil)‬" [ref=e140] [cursor=pointer]
+              - menuitem "‪Português (Portugal)‬" [ref=e141] [cursor=pointer]
+              - menuitem "‪română‬" [ref=e142] [cursor=pointer]
+              - menuitem "‪shqip‬" [ref=e143] [cursor=pointer]
+              - menuitem "‪Slovenčina‬" [ref=e144] [cursor=pointer]
+              - menuitem "‪slovenščina‬" [ref=e145] [cursor=pointer]
+              - menuitem "‪srpski (latinica)‬" [ref=e146] [cursor=pointer]
+              - menuitem "‪Suomi‬" [ref=e147] [cursor=pointer]
+              - menuitem "‪Svenska‬" [ref=e148] [cursor=pointer]
+              - menuitem "‪Tiếng Việt‬" [ref=e149] [cursor=pointer]
+              - menuitem "‪Türkçe‬" [ref=e150] [cursor=pointer]
+              - menuitem "‪Ελληνικά‬" [ref=e151] [cursor=pointer]
+              - menuitem "‪беларуская‬" [ref=e152] [cursor=pointer]
+              - menuitem "‪български‬" [ref=e153] [cursor=pointer]
+              - menuitem "‪кыргызча‬" [ref=e154] [cursor=pointer]
+              - menuitem "‪македонски‬" [ref=e155] [cursor=pointer]
+              - menuitem "‪монгол‬" [ref=e156] [cursor=pointer]
+              - menuitem "‪Русский‬" [ref=e157] [cursor=pointer]
+              - menuitem "‪српски (ћирилица)‬" [ref=e158] [cursor=pointer]
+              - menuitem "‪Українська‬" [ref=e159] [cursor=pointer]
+              - menuitem "‪ქართული‬" [ref=e160] [cursor=pointer]
+              - menuitem "‪қазақ тілі‬" [ref=e161] [cursor=pointer]
+              - menuitem "‪հայերեն‬" [ref=e162] [cursor=pointer]
+              - menuitem "‫עברית‬" [ref=e163] [cursor=pointer]:
+                - generic [ref=e164]: ‫עברית‬
+              - menuitem "‫اردو‬" [ref=e165] [cursor=pointer]:
+                - generic [ref=e166]: ‫اردو‬
+              - menuitem "‫العربية‬" [ref=e167] [cursor=pointer]:
+                - generic [ref=e168]: ‫العربية‬
+              - menuitem "‫فارسی‬" [ref=e169] [cursor=pointer]:
+                - generic [ref=e170]: ‫فارسی‬
+              - menuitem "‪አማርኛ‬" [ref=e171] [cursor=pointer]
+              - menuitem "‪नेपाली‬" [ref=e172] [cursor=pointer]
+              - menuitem "‪मराठी‬" [ref=e173] [cursor=pointer]
+              - menuitem "‪हिन्दी‬" [ref=e174] [cursor=pointer]
+              - menuitem "‪বাংলা‬" [ref=e175] [cursor=pointer]
+              - menuitem "‪ਪੰਜਾਬੀ‬" [ref=e176] [cursor=pointer]
+              - menuitem "‪ગુજરાતી‬" [ref=e177] [cursor=pointer]
+              - menuitem "‪தமிழ்‬" [ref=e178] [cursor=pointer]
+              - menuitem "‪తెలుగు‬" [ref=e179] [cursor=pointer]
+              - menuitem "‪ಕನ್ನಡ‬" [ref=e180] [cursor=pointer]
+              - menuitem "‪മലയാളം‬" [ref=e181] [cursor=pointer]
+              - menuitem "‪සිංහල‬" [ref=e182] [cursor=pointer]
+              - menuitem "‪ไทย‬" [ref=e183] [cursor=pointer]
+              - menuitem "‪ລາວ‬" [ref=e184] [cursor=pointer]
+              - menuitem "‪မြန်မာ‬" [ref=e185] [cursor=pointer]
+              - menuitem "‪ខ្មែរ‬" [ref=e186] [cursor=pointer]
+              - menuitem "‪한국어‬" [ref=e187] [cursor=pointer]
+              - menuitem "‪中文（香港）‬" [ref=e188] [cursor=pointer]
+              - menuitem "‪日本語‬" [ref=e189] [cursor=pointer]
+              - menuitem "‪简体中文‬" [ref=e190] [cursor=pointer]
+              - menuitem "‪繁體中文‬" [ref=e191] [cursor=pointer]
+          - link "Anmelden" [ref=e192] [cursor=pointer]
+      - generic [ref=e194]:
+        - heading "Bevor Sie zu Google weitergehen" [level=1] [ref=e195]
+        - generic [ref=e196]:
+          - generic [ref=e197]:
+            - text: Wir verwenden
+            - link "Cookies" [ref=e198] [cursor=pointer]:
+              - /url: https://policies.google.com/technologies/cookies?utm_source=ucbs&hl=de
+            - text: und Daten, um
+            - list [ref=e199]:
+              - listitem [ref=e200]: Google-Dienste zu erbringen und zu betreiben
+              - listitem [ref=e201]: Ausfälle zu prüfen und Maßnahmen gegen Spam, Betrug und Missbrauch zu ergreifen
+              - listitem [ref=e202]: Daten zu Zielgruppeninteraktionen und Websitestatistiken zu erheben. Mit den gewonnenen Informationen möchten wir verstehen, wie unsere Dienste verwendet werden, und die Qualität dieser Dienste verbessern.
+          - generic [ref=e203]:
+            - text: Wenn Sie „Alle akzeptieren“ auswählen, verwenden wir Cookies und Daten auch, um
+            - list [ref=e204]:
+              - listitem [ref=e205]: neue Dienste zu entwickeln und zu verbessern
+              - listitem [ref=e206]: Werbung auszuliefern und ihre Wirkung zu messen
+              - listitem [ref=e207]: je nach Ihren Einstellungen personalisierte Inhalte anzuzeigen
+              - listitem [ref=e208]: personalisierte Werbung anzuzeigen, abhängig von Ihren Einstellungen
+            - generic [ref=e209]: Wenn Sie „Alle ablehnen“ auswählen, verwenden wir Cookies nicht für diese zusätzlichen Zwecke.
+          - generic [ref=e210]: Nicht personalisierte Inhalte werden u. a. von Inhalten, die Sie sich gerade ansehen, Aktivitäten in Ihrer aktiven Suchsitzung und Ihrem Standort beeinflusst. Nicht personalisierte Werbung wird von den Inhalten, die Sie sich gerade ansehen, und Ihrem allgemeinen Standort beeinflusst. Personalisierte Inhalte und Werbung können auch relevantere Ergebnisse, Empfehlungen und individuelle Werbung enthalten, die auf früheren Aktivitäten in diesem Browser, etwa Suchanfragen bei Google, beruhen. Sofern relevant, verwenden wir Cookies und Daten außerdem, um Inhalte und Werbung altersgerecht zu gestalten.
+          - generic [ref=e211]: Wählen Sie „Weitere Optionen“ aus, um sich zusätzliche Informationen anzusehen, einschließlich Details zum Verwalten Ihrer Datenschutzeinstellungen. Sie können auch jederzeit g.co/privacytools besuchen.
+        - generic [ref=e212]:
+          - button "Alle akzeptieren" [ref=e213] [cursor=pointer]
+          - button "Alle ablehnen" [ref=e214] [cursor=pointer]
+          - link "Weitere Optionen für Personalisierungseinstellungen und Cookies" [ref=e215] [cursor=pointer]: Weitere Optionen
+        - generic [ref=e216]:
+          - link "Datenschutz" [ref=e217] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=de&fg=1&utm_source=ucbs
+          - generic [ref=e218]: ·
+          - link "Nutzungsbedingungen" [ref=e219] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=de&fg=1&utm_source=ucbs
+      - button "Weitere Informationen" [ref=e220]:
+        - generic [ref=e222]: Weitere Informationen
+```

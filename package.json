@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+"scripts": {
+    "day26": "npx playwright test day26",
+    "report": "npx allure generate allure-results --clean -o allure-report && npx allure open",
+    "smoke" : "npx playwright test smoke"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
