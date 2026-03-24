@@ -34,8 +34,17 @@ export default defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: "html",
-  /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
+reporter: [
+    ["line"], // Terminalde test sonuçlarını anlık olarak satır satır gösterir
+    ["html"], // Playwright'ın kendi built-in HTML raporunu oluşturur ve test bitince otomatik tarayıcıda açar
+    [
+      "allure-playwright", // Allure raporlama kütüphanesini kullan demek
+      {
+        resultsDir: "allure-results", // Test sonuçlarının ham verisini "allure-results" klasörüne kaydet
+      },
+    ],
+  ],
+    /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('')`. */
     //baseURL: process.env.BASE_URL || "https://www.saucedemo.com/",
