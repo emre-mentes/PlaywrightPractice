@@ -36,6 +36,7 @@ test.describe("Smoke Tests", () => {
   });
 });
 
+
 // ============================================
 // GRUP 2: REGRESSION TESTS — Detaylı kontroller
 // AMAÇ: Uygulamaya yeni bir özellik eklendiğinde veya
