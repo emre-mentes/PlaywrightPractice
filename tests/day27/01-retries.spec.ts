@@ -1,5 +1,8 @@
 import { test, expect } from "@playwright/test";
 
+//dosya üzerinden yapilan retries ayarlamasi config.ts dosyasindaki ayarlamayi override eder, yani buradaki gecerli olur
+test.describe.configure({retries:2});
+
 // test.describe bloğu ile bu üç testi "Basit Kontrol Testleri" başlığı altında grupluyoruz.
 test.describe("Basit Kontrol Testleri Grubu", () => {
 
