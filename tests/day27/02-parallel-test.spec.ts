@@ -1,5 +1,6 @@
 import { test } from "@playwright/test";
 
+
 // Bu dosya tek bir spec dosyasıdır.
 // playwright.config.ts içinde fullyParallel: false ayarlandığında
 // bu dosyadaki testler SIRAYLA çalışır.
