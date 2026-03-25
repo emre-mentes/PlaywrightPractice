@@ -17,7 +17,7 @@ test.describe("Basit Kontrol Testleri Grubu", () => {
   }); 
 
 
-  // --- 2. Başarısız Test (Kalır) ---
+  // --- 2. Basarisiz Test (Kalır) ---
   // Bu testin bilerek kalması (fail olması) beklenir.
   test("bilerek_kalan_kontrol_testi", async ({ page }) => {
     await page.goto("https://playwright.dev/docs/intro"); 
