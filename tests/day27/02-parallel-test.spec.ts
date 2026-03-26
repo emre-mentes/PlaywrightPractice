@@ -6,6 +6,7 @@ import { test } from "@playwright/test";
 // Yani A bitmeden B başlamaz, B bitmeden C başlamaz.
 // Toplam süre: 5 + 5 + 5 = 15 saniye olur.
 
+
 //Bu dosyadaki tüm testler serial olarak sırasiyla calissin demis olduk
 //config.ts dosyamizdaki   fullyParallel: true, olsa bile bu dosyadaki ayar override eder ve bu dosya serial calisir
 test.describe.configure({mode:"serial"});
