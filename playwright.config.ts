@@ -1,10 +1,10 @@
-import { defineConfig, devices } from '@playwright/test';
+import { defineConfig, devices } from "@playwright/test";
 
 /**
  * Read environment variables from file.
  * https://github.com/motdotla/dotenv
  */
-import dotenv from 'dotenv';
+import dotenv from "dotenv";
 dotenv.config();
 
 // import path from 'path';
@@ -14,15 +14,13 @@ dotenv.config();
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
-
   globalTimeout: 120000, //test dosyasindaki tüm testleri icin toplamda bitmesi gereken süreyi tanimladik
 
-  timeout:40000,//Her bir test fonksiyonu icin blogun baslangıcından bitisine kadar gereken süreyi ayarladik, default olarak 30000 ms dir
+  timeout: 40000, //Her bir test fonksiyonu icin blogun baslangıcından bitisine kadar gereken süreyi ayarladik, default olarak 30000 ms dir
 
-  expect :{
-    timeout:6000//expect komutlari ile doğrulamalar icin süreyi güncelleyebiliriz, default 5000 ms
+  expect: {
+    timeout: 6000, //expect komutlari ile doğrulamalar icin süreyi güncelleyebiliriz, default 5000 ms
   },
-
 
   testDir: "./tests",
   /* Run tests in files in parallel */
@@ -34,7 +32,8 @@ export default defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-reporter: [
+
+  reporter: [
     ["line"], // Terminalde test sonuçlarını anlık olarak satır satır gösterir
     ["html"], // Playwright'ın kendi built-in HTML raporunu oluşturur ve test bitince otomatik tarayıcıda açar
     [
@@ -44,26 +43,25 @@ reporter: [
       },
     ],
   ],
-    /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
+
+  /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('')`. */
     //baseURL: process.env.BASE_URL || "https://www.saucedemo.com/",
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    screenshot:"only-on-failure",
-    video:"retain-on-failure",
-    trace:"retain-on-failure",
+    screenshot: "only-on-failure",
+    video: "retain-on-failure",
+    trace: "retain-on-failure",
     testIdAttribute: "data-test",
 
-    actionTimeout:10000, // click(), fill().. gibi actionlarda elemanin hazir olmasi icin 10 saniyelik bir limit tanimladik, default suresi yok, test timeouta tabidir
-    
-    navigationTimeout: 15000//page.goto() ile bir sayfanin tamamen yuklenmesi icin ayarlanan bir üst sınırdır.
+    actionTimeout: 10000, // click(), fill().. gibi actionlarda elemanin hazir olmasi icin 10 saniyelik bir limit tanimladik, default suresi yok, test timeouta tabidir
 
+    navigationTimeout: 15000, //page.goto() ile bir sayfanin tamamen yuklenmesi icin ayarlanan bir üst sınırdır.
   },
 
   /* Configure projects for major browsers */
   projects: [
-
     {
       name: "iphone 13",
       use: { ...devices["iPhone 13"] },
@@ -78,23 +76,22 @@ reporter: [
     },
 
     {
-      name:"setup",
-      testMatch:"**/auth.setup.ts"
+      name: "setup",
+      testMatch: "**/auth.setup.ts",
     },
 
     {
       name: "smoke",
-      use: { 
+      use: {
         ...devices["Desktop Chrome"],
         headless: false,
-        viewport : {width:750,height:750},
-        storageState:"playwright/.auth/user.json"
+        viewport: { width: 350, height: 700 },
+        storageState: "playwright/.auth/user.json",
       },
-      testMatch:"**/smoke/*.spec.ts",
-      dependencies: ["setup"],//smoke testleri calistirmadan önce setup projectini calistir
+
+      testMatch: "**/smoke/*.spec.ts",
+      dependencies: ["setup"], //smoke testleri calistirmadan önce setup projectini calistir
     },
-
-
     {
       name: "batch366",
       use: { ...devices["Desktop Chrome"] },
