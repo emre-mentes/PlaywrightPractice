@@ -6,7 +6,6 @@ test('login olmus fixture kullanimi', async ({ loggedInPage }) => {
     
 });
 
-
 /**
  * HOMEWORK:
 https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
