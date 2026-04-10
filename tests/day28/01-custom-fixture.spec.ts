@@ -11,6 +11,7 @@ const test = base.extend<MyFixtures>({
   },
 });
 
+
 test("fixture mekanizmasini kesfediyoruz", async ({ mesaj }) => {
   console.log("2. Test fonksiyonu calisiyor", mesaj);
 });
