@@ -11,6 +11,7 @@ import { test, expect } from "@playwright/test";
 */
 
 
+
 test("Non-retrying practice", async ({ page }) => {
   // 1. https://the-internet.herokuapp.com/dynamic_controls sayfasina git
   await page.goto("https://the-internet.herokuapp.com/dynamic_controls");
